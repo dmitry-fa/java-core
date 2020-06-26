@@ -44,4 +44,6 @@ public interface WriteChannel extends WritableByteChannel, Closeable, Restorable
    */
   @Override
   RestorableState<WriteChannel> capture();
+
+  void abort();
 }

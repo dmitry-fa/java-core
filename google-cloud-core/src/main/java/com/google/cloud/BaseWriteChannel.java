@@ -329,4 +329,9 @@ public abstract class BaseWriteChannel<
       return builder.toString();
     }
   }
+
+  @Override
+  public void abort() {
+    throw new UnsupportedOperationException();
+  }
 }
